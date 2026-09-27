@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Arête",
+      "hasCanvas": false,
+      "bodyTextLen": 231,
+      "bodyTextHash": "6608a5ffbdc7de6096bc66aa2354b3ab4bcf6108bbebdc96f978a8ae2966f86c",
+      "bodyTextPrefix": "ARÊTE The list of who you are becoming, kept. Twenty marks. Five",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Arête",
+      "hasCanvas": false,
+      "bodyTextLen": 231,
+      "bodyTextHash": "6608a5ffbdc7de6096bc66aa2354b3ab4bcf6108bbebdc96f978a8ae2966f86c",
+      "bodyTextPrefix": "ARÊTE The list of who you are becoming, kept. Twenty marks. Five",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

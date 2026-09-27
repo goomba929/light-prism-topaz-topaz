@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "VT323", "IBM Plex Mono", ui-monospace, monospace;
+  --font-sans: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: #000000;
+  --color-surface: #000000;
+  --color-elevated: #05140b;
+  --color-fg: #39ff70;
+  --color-muted: #2aad4f;
+  --color-subtle: #1a7a36;
+  --color-primary: #39ff70;
+  --color-primary-foreground: #000000;
+  --color-secondary: #000000;
+  --color-secondary-foreground: #39ff70;
+  --color-background: #000000;
+  --color-foreground: #39ff70;
+  --color-card: #000000;
+  --color-card-foreground: #39ff70;
+  --color-border: #39ff70;
+  --color-input: #39ff70;
+  --color-ring: #39ff70;
+  --color-accent: #39ff70;
+  --color-accent-fg: #000000;
+  --color-good: #39ff70;
+  --color-warn: #2aad4f;
+  --color-bad: #1a7a36;
+  --color-destructive: #39ff70;
+
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  --shadow-border: 0 0 0 1px #39ff70;
+  --shadow-border-hover: 0 0 0 1px #39ff70;
+
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--color-primary);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgb(0 0 0 / 0.22) 3px,
+    rgb(0 0 0 / 0.22) 4px
+  );
+  opacity: 0.16;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 0.85em;
+  margin-left: 0.12em;
+  vertical-align: baseline;
+  background: currentColor;
+  animation: caret-blink 1.05s step-end infinite;
+}
+
+.caret-done {
+  display: inline-block;
+  width: 0.55ch;
+  height: 0.85em;
+  margin-left: 0.12em;
+  vertical-align: baseline;
+  background: currentColor;
+  animation: caret-blink 1.05s step-end infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    background: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .caret,
+  .caret-done {
+    animation: none;
+  }
+}

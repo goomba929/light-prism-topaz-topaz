@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8099/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Arête",
+      "hasCanvas": false,
+      "bodyTextLen": 231,
+      "bodyTextHash": "6608a5ffbdc7de6096bc66aa2354b3ab4bcf6108bbebdc96f978a8ae2966f86c",
+      "bodyTextPrefix": "ARÊTE The list of who you are becoming, kept. Twenty marks. Five",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "screenshot": "/workspace/screenshots/pages-static.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Arête",
+      "hasCanvas": false,
+      "bodyTextLen": 231,
+      "bodyTextHash": "6608a5ffbdc7de6096bc66aa2354b3ab4bcf6108bbebdc96f978a8ae2966f86c",
+      "bodyTextPrefix": "ARÊTE The list of who you are becoming, kept. Twenty marks. Five",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "screenshot": "/workspace/screenshots/pages-static-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/pages-static.json"
+}
